@@ -110,13 +110,17 @@ nav{
     left: 0px;
 }
 .section{
-   
     max-width: 1440px;
     margin: auto;
 }
+.section-title2{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 900;
+    
+}
 .section-title{
     margin-top: 200px;
-    text-align: center;
     font-size: 48px;
     color: #ffffff;
     font-weight: 900;
@@ -126,6 +130,7 @@ nav{
     text-align: center;
     font-size: 14px;
     margin-bottom: 100px;
+    
 }
 .image-container{
     display: grid;
@@ -142,18 +147,32 @@ nav{
 .two-container{
 
     display: flex;
-    justify-content: center;
+    gap: 150px;
+    justify-content: space-between;
     align-items: center;
     max-width: 1440px;
     background-color: #222;
     border-radius: 20px;
     padding: 30px;
 }
+.runimg-container img{
+    
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
 .runimg-container{
-    background: url(./images/run.jpg);
-    width: 366px;
-    height: 312px;
-    background-position: center;
+    width: 50%;
+    
+}
+.run-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    
 }
 
 
@@ -186,6 +205,18 @@ nav{
     }
     section{
         padding: 0px 20px;
+    }
+    .two-container{
+        flex-direction: column;
+    }
+    .runimg-container{
+        width: 100%;
+        
+    }
+    .run-text-container{
+        
+        width: 100%;
+        
     }
     
 }
