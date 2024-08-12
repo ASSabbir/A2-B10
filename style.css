@@ -201,10 +201,12 @@ nav{
     gap: 20px;
     padding: 20px;
     border-radius: 30px;
+    margin-bottom:50px ;
+    margin-top: 50px;
 }
 .single-photo-container{
    width: 100%; 
-    height: 272px;
+    height: 300px;
     position: relative;
     
     
@@ -212,7 +214,7 @@ nav{
 .container-img{
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-blend-mode: darken;
     border-radius: 20px;
@@ -224,7 +226,37 @@ nav{
     left: 20px;
 
 }
-
+.bmi-table {
+    
+}
+.bmi-table,.bmi-table tr td,.bmi-table tr th{
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-collapse: collapse;
+    
+}
+.bmi-table tr td{
+    color: gray;
+}
+.bmi-table tr th{
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+.package-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    justify-content: center;
+    max-width: 1440px;
+}
+.tag-recommanded{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    background-color: #E6533C;
+    padding: 7px 15px  ;
+    transform: rotate(90deg);
+}
 
 
 
@@ -291,6 +323,13 @@ nav{
         grid-template-columns: repeat(1,1fr);
         
     }
+    .package-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+        justify-content: center;
+        max-width: 1440px;
+    }
     
 }
 @media screen and (min-width : 570px) and (max-width : 990px) {
@@ -323,6 +362,13 @@ nav{
     .photo-container{
         grid-template-columns: repeat(2,1fr);
         
+    }
+    .package-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-content: center;
+        max-width: 1440px;
     }
     
 }
